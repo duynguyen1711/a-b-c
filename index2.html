@@ -1,0 +1,144 @@
+<html __fvdsurfcanyoninserted="1" class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+    <link rel="shortcut icon" type="image/png" />
+
+    <!-- 1. Đây là phần title của website -->
+    <title>Gửi tới bé</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <audio autoplay  loop id="playAudio">
+        <source src="nhacnen.mp3" type="audio/mp3">
+    </audio>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+    <div class="container">
+        <div class="buttons">
+            <a href="index.html" style="text-decoration: none;" class="btn btn-bir">❤️❤️❤️</i></a>
+            <a href="index2.html" style="text-decoration: none;" class="btn btn-timeline">🧡🧡💛💛❤❤</a>
+            
+        </div>
+        <!-- 2. Dòng chữ Happy Birthday
+            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+        <div class="balloon">
+            <div onclick="showMessage2()"><span>F</span></div>
+            <div onclick="showMessage3()"><span>O</span></div>
+            <div onclick="showMessage4()"><span>R</span></div>
+            <div onclick="showMessage5()"><span>Y</span></div>
+            <div onclick="showMessage6()"><span>O</span></div>
+            <div onclick="showMessage7()"><span>U</span></div>
+
+        </div>
+        <div class="avatar">
+            <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+            <img id="hinhbe" src="anh1.jpg" alt="" class="avatar__img" onclick="showMessage1()" />
+            <!-- 4. Tên của người đó -->
+            <h1 onclick="showMessage1()" class="avatar__title">@lalinnneee</h1>
+        </div>
+        <div>
+            <img src="https://ngocthang.net/wp-content/uploads/2020/04/sticker-facebook.gif">
+        </div>
+
+
+    </div>
+    
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+        function showMessage1() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Thấy tấm hình khom, thấy rồi thì k biết cười lên à thấy cười đẹp lắm khom? ", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage2() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Anh rất cần em nhưng mà anh k thích hoàng hôn. Anh thích bình mình cơ vì khi thức dậy có em vui hơn nhiều ",
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage3() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Anh k dịu dàng và soft như mấy video em tag trên top top nhưng anh mong rằng sự ân cần của anh sẽ xoa dịu nổi đau của em ", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage4() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Anh biết em đã trải qua những gì và tổn thương nhiều lần. Anh sẽ vẫn ở đây cùng em xoa dịu vết thương ", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage5() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Mong em đừng bỏ bữa đừng vì stress quá mà bỏ bữa ăn nó k tốt đâu", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage6() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Em không có xấu đừng tự nói mình xấu nữa. HA lúc nào cũng đẹp hết trơn áaa", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+        function showMessage7() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lời nhắn", // Tiêu đề của popup
+                text: "Mệt quá thì nhìn về phía sau nha vẫn có anh ở đây đợi em. Em k cô đơn đâu đừng nói vậy  ", // Nội dung lời nhắn
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+
+</html>
